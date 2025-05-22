@@ -3,11 +3,11 @@ Smart folders for tagged images
 
 ## Tagging
 
-Tag your images with a compatible app like Aves Libre Android gallery app which insert XMP:Subject tags to the jpeg files.
+Tag your images with a compatible app like Aves Libre Android gallery app which inserts XMP:Subject tags to the jpeg files.
 
 ## Refresh Smart Folders
 
-Start this unitility manually, in the background, periodically from a cronjob or using incron and this will create hardlinks of your tagged images in the specified directory so you can browse and find anything without wasting disk space.
+Start this tool manually on demand, in the background, periodically from a cronjob or using incron and this will create hardlinks of your tagged images in the specified directory so you can browse and find anything without wasting disk space.
 
 ## Troubleshooting
 
