@@ -36,7 +36,7 @@ function process_file()
   for tag in $tags;
   do
     mkdir -p "$TAG_DIR/$tag"
-    ln -f "$img" "$TAG_DIR/$tag/$(basename "$img")"
+    ln -sf "$img" "$TAG_DIR/$tag/$(basename "$img")"
   done
 }
 
