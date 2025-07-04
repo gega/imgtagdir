@@ -42,7 +42,7 @@ function process_file()
 
 function catchup()
 {
-  newest=$(find "$TAG_DIR" -type f -printf '%T@ %p\n' | sort -n | tail -1 | cut -d' ' -f2-)
+  newest=$(find "$TAG_DIR" -type l -printf '%T@ %p\n' | sort -n | tail -1 | cut -d' ' -f2-)
   find "$WATCH_DIR" -type f -newer "$newest" -exec file --mime-type {} \; | grep "image/jpeg" | cut -d: -f1 | while read -r file; do
     process_file "$file"
   done
